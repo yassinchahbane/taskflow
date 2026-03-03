@@ -1,0 +1,44 @@
+.main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: #f0f0f0;
+}
+
+.board {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.colTitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-color: #1B8C3E;
+}
