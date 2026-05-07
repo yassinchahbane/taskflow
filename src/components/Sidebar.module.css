@@ -1,0 +1,60 @@
+.sidebar {
+  width: 280px;
+  background: #ffffff;
+  border-right: 1px solid #e5e5e5;
+  padding: 1.5rem;
+  overflow: hidden;
+  transition: width 0.25s ease;
+}
+
+.open {
+  width: 280px;
+}
+
+.closed {
+  width: 76px;
+  min-width: 76px;
+}
+
+.closed .title,
+.closed .list,
+.closed .item {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: #f8f9fb;
+  color: #111111;
+  transition: background 0.2s ease;
+}
+
+.item:hover {
+  background: #e7f0ff;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
